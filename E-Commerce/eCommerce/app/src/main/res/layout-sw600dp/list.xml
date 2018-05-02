@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:id="@+id/openNew">
+
+
+        <ImageView
+            android:id="@+id/image"
+            android:adjustViewBounds="true"
+            android:layout_width="fill_parent"
+            android:scaleType="fitCenter"
+            android:background="#BDBDBD"
+            android:layout_height="wrap_content"
+            />
+
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:gravity="left"
+            android:textColor="#000000"
+            android:id="@+id/finalCategory"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:gravity="left"
+            android:textColor="#000000"
+            android:id="@+id/prize"
+            android:textSize="20sp"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add to Cart"
+            android:textColor="#42A5F5"
+            android:id="@+id/addCart"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:onClick="onClick"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

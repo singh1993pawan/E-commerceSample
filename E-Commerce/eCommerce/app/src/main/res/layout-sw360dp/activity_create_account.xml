@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pyplyn.pawan.ecommerce.CreateAccount">
+
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/create_account_toolbar"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/email_signUp"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_height="wrap_content"
+            android:ems="12"
+            android:hint="Email address*"
+            android:inputType="textEmailAddress"/>
+
+
+
+        <EditText
+            android:id="@+id/password_signUp"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:ems="12"
+            android:hint="Password*"
+            android:inputType="textPassword"/>
+
+        <EditText
+            android:id="@+id/name_signUp"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:ems="12"
+            android:hint="Full Name"
+            android:inputType="textPersonName"/>
+
+        <EditText
+            android:id="@+id/mobile_number_signUp"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:ems="12"
+            android:hint="Mobile Number (for order updates)"
+            android:inputType="phone"/>
+
+        <LinearLayout
+            android:id="@+id/btnLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp">
+           <!-- <Button
+                android:id="@+id/female"
+                android:layout_width="0dp"
+                android:textSize="18dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:textColor="@drawable/butttoncolor"
+                android:background="@drawable/button_shape"
+                android:text="Female" />
+
+            <Button
+                android:id="@+id/male"
+                android:layout_width="0dp"
+                android:textColor="@drawable/butttoncolor"
+                android:textAllCaps="false"
+                android:background="@drawable/button_shape"
+                android:textSize="18dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Male"/>-->
+
+            <RadioGroup
+                android:id="@+id/genderRadio"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/femaleSelected"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:text="Female"
+                    android:checked="true"
+                    android:onClick="genderFunction"
+                    />
+                <RadioButton android:id="@+id/maleSelected"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:onClick="genderFunction" />
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:text="Create Account"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@color/colorAccent"
+            android:ems="10"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:layout_marginTop="30dp"
+            android:textColor="#ffffff"
+            android:id="@+id/create_account_button"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
